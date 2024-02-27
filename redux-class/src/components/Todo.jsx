@@ -13,11 +13,11 @@ export default function Todo() {
     //we have to store the useDispatch in a variable to run
     const dispatch = useDispatch()
   
-    const clickHandler = (id) => {
-      // console.log("delete", id)
-      //here we pass the id as a payload to the reducers so then they can change the state variable
-        dispatch(deleteTodo(id))
-    }
+  const clickHandler = (id) => {
+    // console.log("delete", id)
+    //here we pass the id as a payload to the reducers so then they can change the state variable
+    dispatch(deleteTodo(id))
+  };
     
     return (
     <>
